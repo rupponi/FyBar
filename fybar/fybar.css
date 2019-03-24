@@ -1,26 +1,32 @@
-html {
+html, body {
     font-family: "Karla", sans-serif;
     font-size: 1rem;
+    min-height: 3.25rem;
+    min-width: 40rem;
+    margin-top: -0.2rem;
+    background-color: #333333;
 }
 
-#container-bar {
+#FyBarApp {
     position: fixed;
+    display: inline-block;
     margin-top: 0rem;
     height: 2.5rem;
-    width: 100%;
-    border-radius: 1rem;
+    min-width: 100%;
+    border-radius: 5px;
     background-color: #333;
 }
 
 #logo {
-    position: relative;
-    top: 25%;
+    position: absolute;
+    display: inline-block;
+    margin-top: 1.5rem;
     left: 1rem;
+    height: 1rem;
 }
 
 #logo-icon {
     position: relative;
-    display: inline-block;
     height: 1rem;
     top: 0.2rem;
 }
@@ -31,4 +37,30 @@ html {
     height: 1rem;
     color: #fff;
     left: 0.2rem;
+}
+
+#authorize-button {
+    color: #47de6c;
+    background-color: #333;
+    border: none;
+}
+
+#player {
+    position: absolute;
+    display: inline-block;
+    align-content: center;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 50%;
+}
+
+#play-button {
+    position: relative;
+    height: 2rem;
+}
+
+#play-button-img {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
 }

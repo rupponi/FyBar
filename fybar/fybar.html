@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FyBar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="fybar.css">
     <script src="fybar.js"></script>
 </head>
 <body>
-    <div id="container-bar">
+    <div id="FyBarApp">
         <div id="logo">
             <img id="logo-icon" src="icon.png">
             <div id="title">FyBar (1.0.0)</div>
+            <button onclick="authorize()" id="authorize-button">Authorize</button>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://sdk.scdn.co/spotify-player.js"></script>
-        <script src="fybar.js"></script>
+        <div id="player">
+            <img onclick="hello()" id="play-button-img" src="img/play-button.png">
+        </div>
+        <!--<script src="https://sdk.scdn.co/spotify-player.js"></script>-->
     </div>
 </body>
 </html>
