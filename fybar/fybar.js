@@ -3,6 +3,8 @@ const scopes = 'user-modify-playback-state';
 const redirect_uri = 'https://rohanupponi.com';
 let me = null;
 
+let accessTok = 'Hello';
+
 let authRequestWindow;
 
 function authorize() {
@@ -15,17 +17,14 @@ function authorize() {
                 'Authorization': `Bearer ${payload}`
             }
         }).then(response => {
-            me = response.headers.toString();
-            return response.json();
-        }).then(data => {
-            console.log(me);
+            return mounted();
         });
     }
 }
 
 function hello() {
-    console.log("Hello world!");
-    console.log(me);
+    console.log(accessTok);
+    window.alert(accessTok);
 }
 
 function mounted() {
@@ -36,3 +35,18 @@ function mounted() {
     }
 }
 
+document.getElementById("authorize-button").addEventListener("click",
+    function() {
+        console.log(accessTok);
+        accessTok = authorize();
+        console.log(accessTok);
+    },
+    false
+);
+
+document.getElementById("play-button").addEventListener("click",
+    function() {
+        hello();
+    },
+    false
+);
