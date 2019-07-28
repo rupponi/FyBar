@@ -1,6 +1,6 @@
 const client_id = '85a6448ca4f841c5a6566d782c9bc50b';
 const scopes = 'user-modify-playback-state';
-const redirect_uri = 'https://rohanupponi.com';
+const redirect_uri = 'https://www.spotify.com';
 let me = null;
 
 let accessTok = 'Hello';
